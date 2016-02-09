@@ -1,0 +1,380 @@
+/*
+Theme Name: Latihan
+Theme URI: 
+Description: Official Website Sekolah 
+Author: Achmad Nugrahantoro
+Author URI: https://www.facebook.com/an.atsa2
+Version: 1.0
+*/
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+
+/*
+    ========================================
+    TABLE OF CONTENT
+    ========================================
+    
+    [0. MAIN]
+    [1. TOPBAR]
+    [2. HEADER]
+    [3. NAVBAR]
+    [4. SLIDER]
+    [5. SIDEBAR]
+    [6. FOOTER]
+*/
+
+
+/*
+
+/* 
+    ==================
+    [0. MAIN]
+    ==================
+*/
+body {
+    background: #f5f5f5;
+    margin: 0;
+    padding:0;
+    font: 12px/1.7em 'Open Sans', arial, sans-serif;
+    overflow-x: hidden;
+    min-height: 200px;
+}
+
+/* 
+    ==================
+    [1. TOPBAR]
+    ==================
+*/
+.line-top {
+    background:#FF0000;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+.top-bar ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+.top-bar ul li {
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.top-bar ul li:last-child,
+.top-bar ul li:last-child > a {
+    border-right: none;
+    padding-right: 0;
+}
+.top-bar ul li:last-child {
+    padding: 0px 0 0 10px;
+    color: #888888;
+}
+.top-bar ul li a {
+    padding: 5px 10px;
+    text-transform: capitalize;
+    color: #888;
+}
+.top-bar ul li a:hover {
+    color: #F6A03D;
+}
+
+/* 
+    ==================
+    [2. HEADER]
+    ==================
+*/
+header {
+    height:200px;
+}
+
+/* 
+    ==================
+    [3. NAVBAR]
+    ==================
+*/
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10; 
+}
+#navbar-main{
+    background-color: #1b59a6;
+    border-color: rgba(231, 231, 231, 0);
+    border-radius: 0px;
+    font: 12px/1.7em 'Open Sans', arial, sans-serif;
+}
+.navbar-header
+.navbar-brand{
+    padding: 12px 17px 13px;
+    margin-top: 0px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    text-shadow: none;
+    font-size: 12px;
+    border-right: 1px solid #7eadc3;
+}
+.navbar-nav > a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;   
+}
+.navbar .nav > li > a {
+    float: none;
+    padding: 12px 17px 13px;
+    margin-top: 0px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: none;
+    font-size: 12px;
+    border-right: 1px solid #7eadc3;
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+    color: #dddddd;
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar .nav > a,
+.navbar .nav > a:hover,
+.navbar .nav > a:focus {
+    color: #2a84ae;
+}
+.navbar-form input, .form-inline input {
+    width:auto;
+}
+.container{
+    max-width: 960px;
+}
+
+/*
+    ==================
+    [4. SLIDER]
+    ==================
+*/
+#masthead {
+    background: #5996b2 url(../img/bg.png) repeat center top;
+    height: 200px;
+}
+#masthead .carousel {
+    margin-bottom: 0px;
+}
+#masthead .carousel .container {
+    position: relative;
+    z-index: 3;
+}
+#masthead .carousel-control {
+    height: 32px;
+    margin-top: 0;
+    font-size: 30px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,0.9);
+    padding: 4px 0;
+    border-radius: 0px;
+    font-weight: 300;
+    border: 0;
+    z-index: 10;
+}
+#masthead .carousel .carousel-control.right {
+    right: 15px;
+    top: 145px;
+    left: auto;
+}
+#masthead .carousel .carousel-control.left {
+    right: 55px;
+    top: 145px;
+    left: auto;
+}
+#masthead .carousel .item {
+    height: 200px;
+}
+#masthead .carousel .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.slideimage {
+    width: auto;
+    height: auto;
+}
+#masthead .carousel-caption {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0px;
+    position: static;
+    max-width: 300px;
+    height: 160px;
+    padding: 20px;
+    margin: 0px 20px 0 0;
+    float: right;
+}
+#masthead .carousel-caption h2 {
+    font-family: 'Open Sans', serif;
+    font-weight: 600;
+    margin: 0;
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    text-shadow: none;
+    padding-bottom: 8px;
+    text-transform: capitalize;
+}
+#masthead .carousel-caption .lead {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #fff;
+}
+#masthead .carousel-caption .btn {
+    font-size: 12px;
+}
+#masthead .carousel-indicators li {
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+#masthead .carousel-indicators .active {
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/*
+    ==================
+    [5. SIDEBAR]
+    ==================
+*/
+#sidebar.affix-top {
+    position: static;
+}
+
+#sidebar.affix {
+    position: fixed;
+    top: 80px;
+}
+
+/*
+    ==================
+    [6. FOOTER]
+    ==================
+*/
+#footer{
+    margin-top: 25px;
+    padding: 10px 0;
+    background:#1b59a6;
+    width: 100%;
+}
+.footer{
+    list-style-type: none;
+    margin-left: 0;
+}
+.row .col-sm-4 > ul > li{
+    float: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #FAFAFA;
+    text-decoration: none;
+    text-shadow: none;
+    font-size: 12px;
+    border-right: 1px solid #7eadc3;
+}
+.row .col-sm-4 > ul > li > a{
+    font-family: sans-serif;
+    color: #FAFAFA;
+}
+.page-header-button{
+    font-family: sans-serif;
+    color: #FAFAFA;
+}
+
